@@ -1,0 +1,148 @@
+import time
+n=1
+
+while(n!=0):
+    print("Welcome")
+    time.sleep(2)
+    print("THIS PROGRAM WILL CONVERT ANY STRING INTO MORSE CODE")
+    time.sleep(2.5)
+    print("NO any type of symbols are allowed in the string")
+    time.sleep(2.5)
+    print("Enter A String To Be Converted")
+    string=str(input())
+    str1=string.lower()
+    a=".-"
+    b="-..."
+    c="-.-."
+    d="-.."
+    e="."
+    f="..-."
+    g="--."
+    h="...."
+    i1=".."
+    j=".---"
+    k="-.-"
+    l=".-.."
+    m="--"
+    n="-."
+    o="---"
+    p=".--."
+    q="--.-"
+    r=".-."
+    s="..."
+    t="-"
+    u="..-"
+    v="...-"
+    w=".--"
+    x="-..-"
+    y="-.--"
+    z="--.."
+    one=".----"
+    two="..---"
+    three="...--"
+    four="....-"
+    five="....."
+    six="-...."
+    seven="--..."
+    eight="---."
+    nine="----."
+    zero="-----"
+    space="   "
+    code=""
+    codes=""
+    lst=list(str1)
+    for i in range(len(lst)):
+        if(str1[i]=="a"):
+            code=code+a
+        elif(str1[i]=="b"):
+            code=code+b
+        elif(str1[i]=="c"):
+            code=code+c
+        elif(str1[i]=="d"):
+            code=code+d
+        elif(str1[i]=="e"):
+            code=code+e
+        elif(str1[i]=="f"):
+            code=code+f
+        elif(str1[i]=="g"):
+            code=code+g
+        elif(str1[i]=="h"):
+            code=code+h
+        elif(str1[i]=="i"):
+            code=code+i1
+        elif(str1[i]=="j"):
+            code=code+j
+        elif(str1[i]=="k"):
+            code=code+k
+        elif(str1[i]=="l"):
+            code=code+l
+        elif(str1[i]=="m"):
+            code=code+m
+        elif(str1[i]=="n"):
+            code=code+n
+        elif(str1[i]=="o"):
+            code=code+o
+        elif(str1[i]=="p"):
+            code=code+p
+        elif(str1[i]=="q"):
+            code=code+q
+        elif(str1[i]=="r"):
+            code=code+r
+        elif(str1[i]=="s"):
+            code=code+s
+        elif(str1[i]=="t"):
+            code=code+t
+        elif(str1[i]=="u"):
+            code=code+u
+        elif(str1[i]=="v"):
+            code=code+v
+        elif(str1[i]=="w"):
+            code=code+w
+        elif(str1[i]=="x"):
+            code=code+x
+        elif(str1[i]=="y"):
+            code=code+y
+        elif(str1[i]=="z"):
+            code=code+z
+        elif(str1[i]=="1"):
+            code=code+one
+        elif(str1[i]=="2"):
+            code=code+two
+        elif(str1[i]=="3"):
+            code=code+three
+        elif(str1[i]=="4"):
+            code=code+four
+        elif(str1[i]=="5"):
+            code=code+five
+        elif(str1[i]=="8"):
+            code=code+eight
+        elif(str1[i]=="9"):
+            code=code+nine
+        elif(str1[i]=="0"):
+            code=code+zero
+        elif(str1[i]==" "):
+            code=code+space
+        else:
+        
+            print("!!!ERROR!!!")
+            time.sleep(2)
+            print("the string u have input is containing a specific symbol")
+            break;
+    
+    ("^^^ after encrypting ^^^")
+    time.sleep(2.5)
+    print("your morse code is now under process!!!")
+    time.sleep(2)
+    print("Your original string")
+    print(str1)
+    time.sleep(1.5)
+    print(code)
+    print("DONE")
+    print("If wants to continue type [1]")
+    n1=int(input())
+    n=n1
+    if(n==1):
+        continue
+    else:
+        print("Thank you")
+        break
